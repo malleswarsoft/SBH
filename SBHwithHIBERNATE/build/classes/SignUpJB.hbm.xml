@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 April 2011 7:52:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.spark.dto.SignUpJB" table="sbh" discriminator-value="general">
+<id name="ac" column ="ac">
+<generator class="sequence">
+<param name="sequence">sbh_sequence</param>
+</generator>
+</id>
+			<property name="userName" length="15"></property>
+			<property name="password" length="10"></property>
+			<property name="firstName" length="10"></property>
+			<property name="lastName" length="10"></property>
+			<property name="email" length="10"></property>
+			<property name="dob" length="10"></property>
+			
+		
+	</class>
+</hibernate-mapping>
